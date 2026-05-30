@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tell 'em They're Dreaming — The Castle Property Tool</title>
+  <meta name="description" content="A free Chrome extension that shows you what Australian properties are actually worth. Powered by The Castle.">
+  <meta property="og:title" content="Tell 'em They're Dreaming">
+  <meta property="og:description" content="See what Australian properties are actually worth. Powered by The Castle.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ═══ HERO ═══ -->
+  <header class="hero">
+    <div class="hero-inner">
+      <div class="hero-badge">Free Chrome Extension</div>
+      <h1 class="hero-title">
+        Tell 'em<br>They're<br><em>Dreaming.</em>
+      </h1>
+      <p class="hero-sub">
+        Australian real estate prices are a fantasy.<br>
+        We show you what to actually offer.
+      </p>
+      <a href="#install" class="btn-primary">Get the Extension — It's Free</a>
+      <p class="hero-note">Works on domain.com.au &amp; realestate.com.au</p>
+    </div>
+    <div class="hero-art">
+      <div class="art-frame art-frame--video">
+        <div class="video-wrap">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/dik_wnOE4dk?si=woZsImh3lvBRsOhM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ═══ ROTATING QUOTE TICKER ═══ -->
+  <div class="quote-ticker">
+    <div class="ticker-inner">
+<span class="ticker-quote" id="tickerQuote">"Three weeks on the market. They're softening. You can feel it."</span>
+    </div>
+  </div>
+
+  <!-- ═══ HOW IT WORKS ═══ -->
+  <section class="section how-section" id="how">
+    <div class="container">
+      <h2 class="section-title">How's the serenity?</h2>
+      <p class="section-sub">Three steps to property enlightenment.</p>
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">1</div>
+          <div class="step-icon">🔍</div>
+          <h3>We find the price</h3>
+          <p>The extension reads the asking price — including data hidden in the page that agents don't always show you.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <div class="step-icon">✂️</div>
+          <h3>We apply your discount</h3>
+          <p>Set your discount percentage (default 20%). It's your number. Darryl would probably go 30%.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <div class="step-icon">🏠</div>
+          <h3>We show you the reality</h3>
+          <p>Right there in the listing, inline, no fuss. The offer price you should actually be making.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ POOL ROOM MOCKUP ═══ -->
+  <section class="section mockup-section" id="preview">
+    <div class="container">
+      <h2 class="section-title">Straight to the pool room</h2>
+      <p class="section-sub">Here's what it looks like, inline, on every listing.</p>
+
+      <!-- Main price badge example -->
+      <div class="mockup-wrap">
+        <div class="mockup-listing">
+          <div class="mock-address">42 Highview Crescent, Coolaroo VIC 3048</div>
+          <div class="mock-price-row">
+            <div class="mock-price">$1,100,000</div>
+            <div class="mock-badge">
+              <div class="mock-badge-header">
+                <img src="assets/4000.avif" class="mock-icon" alt="">
+                <span class="mock-badge-title">Tell 'em They're Dreaming!</span>
+              </div>
+              <div class="mock-badge-prices">
+                <div class="mock-row">
+                  <span class="mock-label">Asking:</span>
+                  <span class="mock-ask">$1,100,000</span>
+                </div>
+                <div class="mock-row">
+                  <span class="mock-label">Your offer:</span>
+                  <span class="mock-offer">$880,000</span>
+                  <span class="mock-pill">20% off</span>
+                </div>
+                <div class="mock-save">Save $220,000</div>
+              </div>
+              <div class="mock-quote">"Three weeks on the market. They're softening. You can feel it."</div>
+            </div>
+          </div>
+          <div class="mock-details">
+            <span>🛏 4</span><span>🛁 2</span><span>🚗 2</span>
+          </div>
+          <div class="mock-desc">Stunning family home in a sought-after location. Don't miss this opportunity to secure your dream property in a tightly held pocket of the suburb…</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══ BS ANNOTATION ═══ -->
+  <section class="section annotation-section" id="annotations">
+    <div class="container">
+      <h2 class="section-title">Reads between the lines</h2>
+      <p class="section-sub">The extension also annotates the property description — flagging the phrases agents use to disguise problems.</p>
+
+      <div class="annotation-demo">
+        <div class="anno-label">Property description — as it appears with the extension active:</div>
+        <div class="anno-text">
+          <p>
+            This charming
+            <span class="demo-phrase">renovator's delight<span class="demo-note">it's falling apart</span></span>
+            is nestled in a
+            <span class="demo-phrase">tightly held<span class="demo-note">they couldn't sell it last time either</span></span>
+            pocket of this
+            <span class="demo-phrase">up-and-coming<span class="demo-note">been 'up and coming' since 2003</span></span>
+            suburb. The
+            <span class="demo-phrase">cosy<span class="demo-note">small</span></span>
+            lounge flows to a
+            <span class="demo-phrase">low-maintenance<span class="demo-note">it's mostly concrete</span></span>
+            rear yard with a
+            <span class="demo-phrase">north-facing<span class="demo-note">so does every house in Australia</span></span>
+            aspect.
+            Perfect for the
+            <span class="demo-phrase">savvy investor<span class="demo-note">yield is terrible, but best of luck</span></span>
+            or first home buyer looking for a property with
+            <span class="demo-phrase">great potential<span class="demo-note">needs serious work</span></span>.
+            Don't miss this
+            <span class="demo-phrase">unique opportunity<span class="demo-note">hard to sell — that's what's unique</span></span>
+            in a
+            <span class="demo-phrase">sought-after<span class="demo-note">by people who can't afford it</span></span>
+            location,
+            just
+            <span class="demo-phrase">moments from<span class="demo-note">15 minutes in a car with no traffic</span></span>
+            schools, shops and transport.
+          </p>
+        </div>
+        <div class="anno-caption">Every flagged phrase is underlined. Hover to see what it means.</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══ FEATURES ═══ -->
+  <section class="section features-section" id="features">
+    <div class="container">
+      <h2 class="section-title">It's the vibe of the thing</h2>
+      <div class="features">
+        <div class="feature">
+          <div class="feature-icon">👁</div>
+          <h3>Hidden prices surfaced</h3>
+          <p>Reads price data embedded in the page that agents sometimes omit from the display — the same trick the pros use.</p>
+        </div>
+        <div class="feature">
+          <div class="feature-icon">⚙️</div>
+          <h3>Fully configurable</h3>
+          <p>Set your discount from 5% to 50%. Five percent if you're being polite. Forty if you've seen the building report.</p>
+        </div>
+        <div class="feature">
+          <div class="feature-icon">🔒</div>
+          <h3>100% private</h3>
+          <p>No accounts. No data sent anywhere. Everything runs locally in your browser. Darryl wouldn't have it any other way.</p>
+        </div>
+        <div class="feature">
+          <div class="feature-icon">⚡</div>
+          <h3>Works everywhere on the page</h3>
+          <p>Injected inline on listing pages AND search result cards. You'll never look at a price the same way again.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ INSTALL ═══ -->
+  <section class="section install-section" id="install">
+    <div class="container install-inner">
+      <img src="assets/4000.avif" class="install-portrait" alt="Michael Caton winking">
+      <div class="install-text">
+        <h2>Right. Let's do this.</h2>
+        <p>Free forever. No sign-up. Works in Chrome and any Chromium-based browser (Edge, Brave, Arc).</p>
+        <a href="#" class="btn-primary btn-large">Add to Chrome — Free</a>
+        <p class="install-note">
+          Or install manually: <a href="https://github.com/" class="text-link">clone the repo</a> and load it as an unpacked extension.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-logo">
+        <img src="assets/4000.avif" class="footer-icon" alt="">
+        <span>Tell 'em They're Dreaming</span>
+      </div>
+      <div class="footer-quotes">
+        <p>"How's the serenity?"</p>
+        <p>"This is going straight to the pool room."</p>
+        <p>"Jousting? That's not in the dictionary."</p>
+      </div>
+      <div class="footer-links">
+        <p>Inspired by <em>The Castle</em> (1997) — Working Dog Productions</p>
+        <p class="footer-disclaimer">Not affiliated with or endorsed by the film or its creators. Prices shown are for illustrative purposes. Always do your own research.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

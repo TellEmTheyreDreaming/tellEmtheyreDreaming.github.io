@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 220">
+  <!-- Shirt -->
+  <path d="M20 210 L48 168 L80 182 L100 172 L120 182 L152 168 L180 210 Z" fill="#1a5c2d"/>
+  <!-- Collar V -->
+  <path d="M80 182 L100 198 L120 182 L100 172 Z" fill="#f0e0c8"/>
+
+  <!-- Neck -->
+  <rect x="88" y="155" width="24" height="20" rx="6" fill="#f5c29a"/>
+
+  <!-- Head -->
+  <ellipse cx="100" cy="108" rx="74" ry="78" fill="#f5c29a"/>
+
+  <!-- Hair -->
+  <path d="M28 90 Q24 28 100 20 Q176 28 172 90 Q158 52 100 48 Q42 52 28 90 Z" fill="#5a4535"/>
+  <!-- Side hair -->
+  <ellipse cx="27" cy="100" rx="12" ry="18" fill="#5a4535"/>
+  <ellipse cx="173" cy="100" rx="12" ry="18" fill="#5a4535"/>
+
+  <!-- Ears -->
+  <ellipse cx="26" cy="112" rx="12" ry="16" fill="#f5c29a"/>
+  <ellipse cx="174" cy="112" rx="12" ry="16" fill="#f5c29a"/>
+  <ellipse cx="27" cy="112" rx="7" ry="10" fill="#e8a880"/>
+  <ellipse cx="173" cy="112" rx="7" ry="10" fill="#e8a880"/>
+
+  <!-- ── LEFT EYE (open, friendly) ── -->
+  <ellipse cx="70" cy="100" rx="17" ry="18" fill="white"/>
+  <!-- iris -->
+  <circle cx="72" cy="102" r="11" fill="#5a8fc4"/>
+  <!-- pupil -->
+  <circle cx="72" cy="102" r="7.5" fill="#1a1a2e"/>
+  <!-- highlights -->
+  <circle cx="76" cy="97" r="3.5" fill="white" opacity="0.9"/>
+  <circle cx="69" cy="105" r="1.5" fill="white" opacity="0.4"/>
+  <!-- lower lid crease -->
+  <path d="M53 108 Q70 118 87 108" stroke="#d09070" stroke-width="1.5" fill="none" opacity="0.4"/>
+
+  <!-- LEFT eyebrow -->
+  <path d="M53 83 Q70 76 87 82" stroke="#5a4535" stroke-width="4" fill="none" stroke-linecap="round"/>
+
+  <!-- ── RIGHT EYE (winking!) ── -->
+  <!-- upper lid line -->
+  <path d="M113 97 Q130 89 147 97" stroke="#5a4535" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+  <!-- lid fill (skin covering the eye) -->
+  <path d="M113 97 Q130 108 147 97 Q147 88 130 85 Q113 88 113 97 Z" fill="#f5c29a"/>
+  <!-- lower wink crease -->
+  <path d="M115 100 Q130 110 145 100" stroke="#d09070" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <!-- eyelashes -->
+  <line x1="119" y1="95" x2="117" y2="90" stroke="#5a4535" stroke-width="2" stroke-linecap="round"/>
+  <line x1="130" y1="92" x2="130" y2="87" stroke="#5a4535" stroke-width="2" stroke-linecap="round"/>
+  <line x1="141" y1="95" x2="143" y2="90" stroke="#5a4535" stroke-width="2" stroke-linecap="round"/>
+  <!-- wink cheek flush -->
+  <ellipse cx="148" cy="120" rx="15" ry="9" fill="#ffb3a0" opacity="0.35"/>
+
+  <!-- RIGHT eyebrow (raised — classic wink expression) -->
+  <path d="M113 80 Q130 71 147 78" stroke="#5a4535" stroke-width="4" fill="none" stroke-linecap="round"/>
+
+  <!-- Nose -->
+  <path d="M98 112 Q92 126 96 131 Q100 134 104 131 Q108 126 102 112 Z" fill="#e8a880" opacity="0.7"/>
+  <ellipse cx="95" cy="130" rx="5.5" ry="4" fill="#d08a60" opacity="0.5"/>
+  <ellipse cx="105" cy="130" rx="5.5" ry="4" fill="#d08a60" opacity="0.5"/>
+
+  <!-- Smile -->
+  <path d="M68 148 Q100 172 132 148" stroke="#2c1810" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <!-- Teeth -->
+  <path d="M76 152 Q100 166 124 152 Q114 162 100 164 Q86 162 76 152 Z" fill="white"/>
+  <!-- Tooth divider -->
+  <line x1="100" y1="152" x2="100" y2="163" stroke="#e8e0d8" stroke-width="1" opacity="0.6"/>
+  <!-- Lower lip -->
+  <path d="M80 164 Q100 174 120 164" stroke="#d09070" stroke-width="2" fill="none" opacity="0.5"/>
+
+  <!-- Left cheek blush -->
+  <ellipse cx="55" cy="126" rx="14" ry="9" fill="#ffb3a0" opacity="0.25"/>
+</svg>
