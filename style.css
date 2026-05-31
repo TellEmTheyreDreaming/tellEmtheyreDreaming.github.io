@@ -621,6 +621,13 @@ body {
   color: var(--brown); margin-bottom: 12px;
 }
 .install-text p { font-size: 16px; color: var(--text-muted); margin-bottom: 24px; }
+.install-tagline {
+  font-family: 'Playfair Display', serif;
+  font-size: 19px; font-style: italic;
+  color: var(--green-mid);
+  margin-bottom: 16px !important;
+  line-height: 1.5;
+}
 
 .btn-large { font-size: 18px; padding: 16px 40px; }
 
